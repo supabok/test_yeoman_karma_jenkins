@@ -20,7 +20,7 @@ exclude = [];
 
 // test results reporter to use
 // possible values: dots || progress || growl
-reporters = ['coverage','progress'];
+// reporters = ['coverage','progress'];
 coverageReporter = {
     type : 'text',
     dir : 'coverage/'
@@ -58,4 +58,9 @@ captureTimeout = 5000;
 
 // Continuous Integration mode
 // if true, it capture browsers, run tests and exit
-singleRun = false;
+//singleRun = false;
+singleRun = true;
+reporters = ['dots', 'junit'];
+junitReporter = {
+    outputFile: 'test-results.xml'
+}
